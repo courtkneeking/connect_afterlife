@@ -1,0 +1,70 @@
+
+.container-fluid {
+    font-family: 'Crimson Text', serif;
+	background-color: #ccefdb;
+	display: inline-block;
+    padding: 10px 20px;
+    color: #000000ba;
+}
+#page {
+    font-family: 'Crimson Text', serif;
+	color: #000000ba;
+	background-color: #f4fbf7;
+    width: 100vw;
+    height: 100vh;
+    display: inline-block;
+    padding: 5vh 5vw;
+}
+
+h1 {
+    display: inline-block;
+}
+#image_one {
+    height: 6vh;
+    width: 4vw;
+}
+#image_two {
+    height: 10vh;
+    width: 15vw;
+}
+.img-fluid {
+    max-width: 100%; 
+    height: auto;
+}
+.dropdown{
+    display: inline-block;
+    position: absolute;
+    right: 3vw;
+}
+.dropdown > button {
+    background-color: #ccefdb;
+    border: none;
+    font-size: 5vh;
+}
+.dropdown span {
+    color: #ccefdb;
+}
+.show>.btn-secondary.dropdown-toggle:focus, .btn-secondary:not(:disabled):not(.disabled).active:focus{
+    box-shadow: 0 0 0 0.2rem rgba(204, 240, 220, 1);
+}
+.show>.btn-secondary.dropdown-toggle, .btn-secondary:not(:disabled):not(.disabled).active, .btn-secondary:not(:disabled):not(.disabled):active{
+    border-color: #ccefdb;
+    background-color: #ccefdb;
+}
+.btn-secondary:not(:disabled):not(.disabled).active:focus, .btn-secondary:not(:disabled):not(.disabled):active:focus, .show>.btn-secondary.dropdown-toggle:focus{
+    box-shadow: 0 0 0 0.2rem rgba(204, 240, 220, 1);
+}
+
+.btn:focus {
+    outline: 0;
+    outline-color: #ccefdb;
+    box-shadow: 0 0 0 0.2rem rgba(204, 240, 220, 1);
+    background-color: #ccefdb;
+}
+.btn:show {
+    outline: 0;
+    outline-color: #ccefdb;
+    box-shadow: 0 0 0 0.2rem rgba(204, 240, 220, 1);
+    background-color: #ccefdb;
+}
+

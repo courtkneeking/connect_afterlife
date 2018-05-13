@@ -1,0 +1,22 @@
+.outside {
+    margin: 0 0 0 3vw;
+}
+button {
+    background-color: #ccefdb;
+    border: none;
+    color: #000000ba;
+}
+button:hover {
+    background-color: #9e9e9e54;
+}
+form {
+}
+input{ 
+    color:  #9e9e9e54;
+}
+#questions {
+    background-color: grey;
+}
+h1 {
+    text-align: center;
+}

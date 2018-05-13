@@ -1,0 +1,29 @@
+button {
+    background-color: #ccefdb;
+    border: none;
+    color: #000000ba;
+}
+button:hover {
+    background-color: #9e9e9e54;
+}
+form {
+    border: 1px solid #9e9e9e54;
+}
+input{ 
+    border-radius: 0;
+    border-top: 1px solid #9e9e9e54;
+    color:  #9e9e9e54;
+}
+.left {
+    margin-top: 5vh; 
+    width: 40vw;
+    display: inline-block;
+    vertical-align: top;
+}
+.right {
+    margin-top: 5vh;
+    width: 45vw;
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 3vw;
+}

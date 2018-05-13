@@ -1,0 +1,14 @@
+<div class = "outside">
+  <h1>FAQ</h1>
+  <div *ngFor = "let q of questions" id = "questions" class = "container">
+    <p>{{q.question}}</p>
+  </div>
+  <form (submit) = "addQuestion()" class="form-inline" >
+    <input type="text" class="form-control mb-2 mr-sm-2" placeholder="Question" name = "newQuestion.question" [(ngModel)] = "newQuestion.question">
+    <button type="submit" class="btn btn-primary mb-2">Submit</button>
+  </form>
+    
+ </div>
+
+
+

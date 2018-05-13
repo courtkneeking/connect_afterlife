@@ -1,0 +1,26 @@
+
+
+<div class = "left"> 
+    <h2>Login</h2>
+    <form (submit) = "loginUser()">
+            <input type = "text" class = "form-control form-control-lg " name = "email" [(ngModel)] = "email" placeholder = "email">
+            <input type = "text" class = "form-control form-control-lg " name = "password" placeholder = "password">
+            <button type="submit" class= "btn btn-primary btn-lg btn-block ">Login</button>
+    </form>
+</div>   
+
+<div class = "right">
+    <h2>Register</h2>
+    <form (submit) = "registerUser()">
+        <input type = "text" class = "form-control form-control-lg " name = "newUser.name" [(ngModel)] = "newUser.name" placeholder = "name" >
+        <input type = "text" class = "form-control form-control-lg " name = "newUser.email" [(ngModel)] = "newUser.email" placeholder = "email">
+        <input type = "text" class = "form-control form-control-lg " name = "newUser.password" [(ngModel)] = "newUser.password" placeholder = "password">
+        <input type = "text" class = "form-control form-control-lg " name = "newUser.password_confirmation" [(ngModel)] = "newUser.password" placeholder = "password confirmation">
+        <button type="submit" class= "btn btn-primary btn-lg btn-block ">Register</button>
+    </form>
+</div>
+
+
+
+
+
