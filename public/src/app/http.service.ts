@@ -13,9 +13,12 @@ export class HttpService {
     registerUser(newUser){
       return this._http.post('/api/register', newUser)
     }
-    ///////
     loginUser(user){
       return this._http.post('/api/login', user)
+    }
+        ///////
+    getUser(user){
+      return this._http.get('/api/user', user)
     }
     /////////
 

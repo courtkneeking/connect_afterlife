@@ -1,0 +1,15 @@
+<div class="navbar container-fluid">
+    <p id = "header">Deals </p>   
+    <a [routerLink]="['/dashboard']"><img class="img-fluid" id = "image_one" src="images/logo_image.png" alt=""></a>
+</div>
+<div id = "page">
+<div id = "right">
+    <form (submit) = "createPage()">
+        <input type = "text" class = "form-control form-control-lg " name = "newPage.name" [(ngModel)] = "newPage.name" placeholder = "Name" >
+        <input type = "text" class = "form-control form-control-lg " name = "newPage.birthday" [(ngModel)] = "newPage.birthday" placeholder = "Birthday">
+        <input type = "text" class = "form-control form-control-lg " name = "newPage.death_day" [(ngModel)] = "newPage.death_day" placeholder = "Date of Death">
+        <input type = "text" class = "form-control form-control-lg " name = "newPage.image" [(ngModel)] = "newPage.image" placeholder = "image">
+        <button type="submit" class= "btn btn-primary btn-lg btn-block ">Create</button>
+    </form>
+  </div>
+</div>

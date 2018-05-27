@@ -1,0 +1,127 @@
+
+  
+ 
+
+    <div class="navbar container-fluid">
+        <div class="navbar-inner">
+            <div class="container">
+                <div class="dropdown show">
+                  <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                      <a class="dropdown-item" data-toggle = "modal" data-target = "#announcementModal">Announcements</a>
+                      <a class="dropdown-item" [routerLink]="['pages/discussion']">Discussion</a>
+                      <a class="dropdown-item" [routerLink]="['pages/contacts']">Contacts</a>
+                      <a class="dropdown-item" [routerLink]="['pages/memories']">Memories</a>
+                      <a class="dropdown-item" [routerLink]="['pages/pamphlet']">Pamphlet</a>
+                  </div>
+                </div>
+              <p class = "in_memory">In loving memory of..</p>   
+              <a [routerLink]="['/dashboard']"><img class="img-fluid" id = "image_one" src="images/logo_image.png" alt=""></a>
+          </div>
+       </div>
+    </div>
+    <div id = "page">
+      <div id = "left">
+        <div id = "section">
+          <div class = "section">
+            <a class="btn btn-primary" data-toggle = "modal" data-target = "#announcementModal">Announcements</a>
+          </div>
+          <div class = "section">
+            <a class="btn btn-primary" [routerLink]="['/pages/discussion']" role="button">Discussions</a>
+          </div>
+          <div class = "section">
+              <a class="btn btn-primary" [routerLink]="['/pages/contacts']" role="button">Contacts</a>
+          </div>
+          <div class = "section">
+              <a class="btn btn-primary" [routerLink]="['/pages/memories']" role="button">Memories</a>
+          </div>
+          <div class = "section">
+              <a class="btn btn-primary" [routerLink]="['/pages/pamphlet']" role="button">Pamphlet</a>
+          </div>
+        </div>
+        <div class = "left_bottom">
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam semper diam at erat pulvinar, at pulvinar felis blandit. Vestibulum volutpat tellus diam, consequat gravida libero rhoncus ut"
+        </div>
+      </div>
+   
+
+    <div id = "right">
+        <div class = "right_top">
+            <div class = "right_inner">
+                <div class = "container-fluid ob">
+                    <h5>Name </h5>
+                    <img src="images/profile_image.jpg" alt="" class="img-fluid">
+                    <p>
+                      Make arrangements to print the obituary. Before you start writing your obituary, you should make sure that the obituary will be printed in the local paper and you have all the information. Many funeral homes offer a printed obituary in the newspaper as part of the funeral package, so if that's the case, you'll need to call the funeral home if you need more information; if not, you should call your local newspaper. Here's what you need to know:
+                      The cost. Most papers charge by the inch, but the word count can vary based on the paper's font and column width, so you should ask how many words are in an inch.
+                      The deadline. Most papers have a 4 or 5 p.m. deadline for obituaries, though some make exceptions because it's a delicate subject. But be careful about handing in your obituary too long after the deadline, because that may mean that the editors don't have as much time to proofread and finalize your work.
+                      The date it will be printed. You'll want the obituary to be printed as soon as possible so you can not only announce the death in a timely manner but also let everyone know where and when the funeral will take place.
+                      If you'd like the obituary to run in papers other than the local papers, such as national papers if the person was notable, or other local papers in a town where your loved one spent a lot of his life, then you should call those newspapers as well.</p>
+                    </div>
+                   <button class = "ob_but" [routerLink]="['/obituary']">Print</button>
+            </div>
+        </div>
+
+
+    
+
+    </div>
+    <div id = "end">
+      <div class = "top">
+        <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img class="d-block w-100 slide_image" src="images/profile_image.jpg" alt="First slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100 slide_image" src="images/logo.png" alt="Second slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100 slide_image" src="images/logo.png" alt="Third slide">
+              </div>
+            </div>
+          </div> 
+        </div> 
+
+        <div class = "images_box">
+
+
+            <img src="images/profile_image.jpg">
+            <img src="images/profile_image.jpg">
+            <img src="images/profile_image.jpg">
+            <img src="images/profile_image.jpg">
+            <img src="images/profile_image.jpg">
+    
+        </div>
+        <form class = "form-inline across">
+            <input type = "text" placeholder = "url">
+            <input class = "images_but" type = "submit">
+          </form>
+    </div>
+  </div> 
+
+
+  <!-- Modal -->
+  <div class="modal fade" id="announcementModal" tabindex="-1" role="dialog" aria-labelledby="announcementModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="announcementModalLabel">Announcements</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <span class = "modal_date">Put the date</span>
+          <p class = "modal_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam semper diam at erat pulvinar</p>
+        </div>
+      </div>
+    </div>
+  </div>   
+<!-- 
+              <button type="button" class="btn btn-primary">
+                  <a style ="border:none;" href = "http://www.google.com" title = "Visit this page now.">
+                    <img style="height:40px;width:90px;" id = "gofundme" src ="http://funds.gofundme.com/css/3.0_donate/green/widget.png">
+                  </a>
+              </button> -->

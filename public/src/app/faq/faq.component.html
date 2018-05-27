@@ -1,13 +1,31 @@
-<div class = "outside">
+<div class = "container-fluid">
+    <img class="img-fluid" id = "image_two" src="images/logo.png" alt="">
+    <img class="img-fluid" id = "image_one" src="images/logo_image.png" alt="">
+    <div class="dropdown">
+        <button class="btn btn-secondary btn-lg dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <span>...........</span></button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+          <a class="dropdown-item" [routerLink]="['/about']">About</a>
+          <a class="dropdown-item" [routerLink]="['/']">Home</a>
+          <a class="dropdown-item" [routerLink]="['/contact']">Contact</a>
+        </div>
+    </div>
+  </div>
+<div id = "page">
   <h1>FAQ</h1>
-  <div *ngFor = "let q of questions" id = "questions" class = "container">
+  <div *ngFor = "let q of questions" id = "questions">
     <p>{{q.question}}</p>
   </div>
-  <form (submit) = "addQuestion()" class="form-inline" >
-    <input type="text" class="form-control mb-2 mr-sm-2" placeholder="Question" name = "newQuestion.question" [(ngModel)] = "newQuestion.question">
-    <button type="submit" class="btn btn-primary mb-2">Submit</button>
+  <form (submit) = "addQuestion()" >
+      <div class="form-row align-items-center">
+          <div class="col-auto">
+            <input type="text" class="form-control mb-2 mr-sm-2" placeholder="Question" name = "newQuestion.question" [(ngModel)] = "newQuestion.question">
+          </div>
+          <div class="col-auto">
+            <button type="submit" class="btn btn-primary mb-2">Submit</button>
+          </div>
+        </div>
   </form>
-    
  </div>
 
 

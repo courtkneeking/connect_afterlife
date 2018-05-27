@@ -12,7 +12,8 @@ export class LoginComponent implements OnInit {
   user: any;
   errors: any;
   constructor(private _httpService: HttpService, private _router: Router) {
-    this.newUser = {email: ''};
+    this.newUser = {name: '', email: '', password: ''};
+    this.user = {email: '', password: ''}
     this.errors = []; 
   }
 
@@ -22,11 +23,12 @@ export class LoginComponent implements OnInit {
     let obs = this._httpService.registerUser(this.newUser);
     obs.subscribe((data:any)=>{});
   }
-  /////////
   loginUser(){
     let obs = this._httpService.loginUser(this.user);
-    obs.subscribe((data:any)=>{});
+    obs.subscribe((data:any)=>{
+      this.user = data;
+      this._router.navigate(['/dashboard']);
+    });
   }
-  /////////
 }
 

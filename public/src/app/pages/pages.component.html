@@ -1,0 +1,19 @@
+<div class = "container-fluid">
+    <img class="img-fluid" id = "image_two" src="images/logo.png" alt="">
+    <img class="img-fluid" id = "image_one" src="images/logo_image.png" alt="">
+    <div class="dropdown">
+        <button class="btn btn-secondary btn-lg dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <span>...........</span></button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+          <a class="dropdown-item" [routerLink]="['/dashboard']">Dashboard</a>
+          <a class="dropdown-item" [routerLink]="['/']">Site Home</a>
+          <a class="dropdown-item" [routerLink]="['/logout']">Logout</a>
+        </div>
+    </div>
+  </div>
+<div id = "page">
+<h1>My Pages </h1>
+<div class="list-group">
+    <a [routerLink]="['/page']" class="list-group-item list-group-item-action">Page #1</a>
+  </div>
+</div>

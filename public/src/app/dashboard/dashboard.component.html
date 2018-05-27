@@ -1,0 +1,51 @@
+<div class = "container-fluid">
+  <form class="form-inline search">
+    <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+    <button type="submit" class = "icon"><i class="fa fa-search"></i></button>
+    <button type="submit" class = "icon"><i class="fa fa-bell-o"></i></button>
+    <button type="submit" class = "icon"><i class="fa fa-calendar"></i></button>
+    <!-- <button type="submit" class = "icon"><i class="fa fa-commenting-o"></i></button> -->
+    <button type="submit" class = "icon"><i class="fa fa-envelope-o"></i></button>
+  </form>
+
+
+<div class="btn-group dropleft">
+    <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <img class="img-fluid" id = "image_one" src="images/logo_image.png" alt=""></button>
+    <div class="dropdown-menu">
+      <!-- Dropdown menu links -->
+      <a class="dropdown-item"  [routerLink]="['/']">Home</a>
+        <a class="dropdown-item" href="/help">Help</a>
+        <a class="dropdown-item" href="/logout">Logout</a>
+    </div>
+  </div>
+</div>
+
+<div class = "page">
+    <!-- <h5>Hello, {{user.name}}</h5> -->
+    <div id = "left">
+      <div class = "section">
+        <a class="btn btn-primary" [routerLink]="['/pages']"  role="button">My Pages</a>
+      </div>
+      <div class = "section">
+        <a class="btn btn-primary" [routerLink]="['/invitations']" role="button">Invitations</a>
+      </div>
+      <div class = "section">
+          <a class="btn btn-primary" [routerLink]="['/phonebook']" role="button">Phonebook</a>
+      </div>
+      <div class = "section">
+          <a class="btn btn-primary" [routerLink]="['/deals']" role="button">Deals</a>
+      </div>
+      <div class = "section">
+          <a class="btn btn-primary" [routerLink]="['/pages/new']" role="button">Create New Page</a>
+      </div>
+    </div>
+  <div id = "center">
+      <h6>New Stuff, alerts, people who have died recently, deals from morturary, etc.</h6>
+  </div>
+  <div id = "right">
+    <div class = "section">
+        <a class="btn btn-primary" [routerLink]="['/']" role="button">My Groups</a>
+    </div>
+  </div>
+</div>

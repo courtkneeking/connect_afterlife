@@ -1,4 +1,19 @@
-<div class = "container">
+
+
+<div class = "container-fluid">
+    <img class="img-fluid" id = "image_two" src="images/logo.png" alt="">
+    <img class="img-fluid" id = "image_one" src="images/logo_image.png" alt="">
+    <div class="dropdown">
+        <button class="btn btn-secondary btn-lg dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <span>...........</span></button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+          <a class="dropdown-item" [routerLink]="['/']">Home</a>
+          <a class="dropdown-item" [routerLink]="['/faq']">FAQ</a>
+          <a class="dropdown-item" [routerLink]="['/contact']">Contact</a>
+        </div>
+    </div>
+  </div>
+<div class = "page">
    <h1>What is Connect Afterlife?</h1>
    <p>Pitch: 
       I'm currently building a website that that aims to make the process after the death of a friend or family member a little easier. It will be somewhat of a social network site combined with tools to help guide through the necessary steps of organizing a funeral, making an obituary and etc. 

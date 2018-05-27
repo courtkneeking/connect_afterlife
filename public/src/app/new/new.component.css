@@ -1,0 +1,125 @@
+.navbar {
+    font-family: 'Crimson Text', serif;
+    background-color: #b4ccbb; 
+	display: inline-block;
+    padding: 5px 5px;
+    color: #000000ba;
+    height: 9vh;
+    width: 100vw;
+    text-align: center;
+}
+.container-fluid {
+    font-family: 'Crimson Text', serif;
+	background-color: #b4ccbb;
+	display: inline-block;
+    padding: 5px 5px;
+    color: #000000ba;
+}
+.img-fluid {
+    max-width: 100%; 
+    height: auto;
+}
+button {
+    background-color: #b4ccbb;
+    border: none;
+    color: #000000ba;
+}
+button:hover {
+    background-color: #9e9e9e54;
+}
+form {
+    border: 1px solid #9e9e9e54;
+}
+input{ 
+    border-radius: 0;
+    border-top: 1px solid #9e9e9e54;
+    color:  #9e9e9e54;
+}
+@media only screen and (max-width: 480px){
+    #image_one {
+        height: 6vh;
+        width: 4vw;
+        position: absolute;
+        right: 3vw;
+        top: 1vh;
+    }
+    #page {
+        font-family: 'Crimson Text', serif;
+        color: #000000ba;
+        background-color:#f0f5f2;
+        width: 100vw;
+        height: 100vh;
+        padding: 5vh 2vw 2vh 5vw;
+    }
+    #right {
+        margin: 5vh 10vw; 
+        width: 75vw;
+        display: inline-block;
+        vertical-align: top;
+    }
+    #header{
+        display: inline-block;
+        color: white;
+        font-family: 'Dancing Script', cursive;
+        font-size: 30px;
+    }
+
+}
+@media only screen and (min-width: 481px) and (max-width: 1023px){
+    #image_one {
+        height: 6vh;
+        width: 4vw;
+        position: absolute;
+        right: 3vw;
+        top: 1vh;
+    }
+    #page {
+        font-family: 'Crimson Text', serif;
+        color: #000000ba;
+        background-color:#f0f5f2;
+        width: 100vw;
+        height: 100vh;
+        padding: 5vh 2vw 2vh 5vw;
+    }
+    #right {
+        margin: 5vh 10vw; 
+        width: 75vw;
+        display: inline-block;
+        vertical-align: top;
+    }
+    #header{
+        display: inline-block;
+        color: white;
+        font-family: 'Dancing Script', cursive;
+        font-size: 30px;
+    }
+}
+@media only screen and (min-width: 1024px){
+    #image_one {
+        height: 6vh;
+        width: 4vw;
+        position: absolute;
+        right: 3vw;
+        top: 1vh;
+    }
+    #page {
+        font-family: 'Crimson Text', serif;
+        color: #000000ba;
+        background-color:#f0f5f2;
+        width: 100vw;
+        height: 100vh;
+        padding: 5vh 2vw 2vh 5vw;
+    }
+    #right {
+        margin: 5vh 10vw; 
+        width: 75vw;
+        display: inline-block;
+        vertical-align: top;
+    }
+    #header{
+        display: inline-block;
+        color: white;
+        font-family: 'Dancing Script', cursive;
+        font-size: 30px;
+    }
+}
